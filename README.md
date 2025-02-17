@@ -18,5 +18,5 @@ Then, we need to capture rising edge and the following falling edge to calculate
 That means we need to change the polarity, we do that inside the handler.                
 Also, we reset CNT register inside the isr to avoid miscalculation at high duty cycles.                                                  
 It makes capturing smoother.                                    
-We change the polarity of the edge inside the handler.                    
+We change the polarity of the edge inside the handler. We prevent receiving always high or low signal.                   
 ![image](https://github.com/user-attachments/assets/42d28e49-9f6c-430b-9e05-1fe8b3ad72c2)
